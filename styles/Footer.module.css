@@ -1,0 +1,9 @@
+.footer{
+    display: flex;
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5rem;
+
+}
+

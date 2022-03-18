@@ -1,16 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Pangolin&display=swap');
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  margin: 0;  
+  font-family: 'Montserrat' , -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+ 
+  background: #000;
 }
 
-* {
-  box-sizing: border-box;
+
+.dot {
+  display: flex;
+  border: #000000 solid 5px;
+  padding: 5px;
+  border-radius: 100%;
+}
+.inner_dot{
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background: #20a19d ;
+  display: inline-block;
+}
+
+
+.nav-bg{
+  background: #dfdfdf;
+  color:white;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  background-color: rgba(255, 255, 255, 0.705);
+}
+
+.about-title{
+    position: relative;
+    font-size: 5rem;
+    color: #ffffff;  
+    line-height: 0.9;
+    text-align: center;
+    font-weight: 800;
+}
+
+.aboutme-text{
+   position: relative;
+    color: #ffffff;  
+    line-height: 0.9;
+    text-align: center;
+    
+}
+
+.bg-sky{
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1516797045820-6edca89b2830?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) ;
+  background-size: cover;
+
+}
+.bg-sky::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgb(255,255,255);
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.5112920168067228) 4%, rgba(128,67,170,0.3572303921568627) 26%, rgba(128,67,170,0.3656337535014006) 78%, rgba(255,255,255,1) 100%);
 }

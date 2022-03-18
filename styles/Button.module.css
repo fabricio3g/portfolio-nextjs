@@ -1,0 +1,67 @@
+.btn{
+    border:none;
+    background: none;
+    font-size: medium;
+    cursor:pointer;
+    color: black;
+    border-radius: 0.2rem;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.btn1{
+    border:none;
+    background: none;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    color: #fff;
+    background: #20a19d;
+}
+
+.active{
+    border:none;
+    background: none;
+    font-size: medium;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(48, 202, 197);
+    border-radius: 0.2rem;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.active:hover {
+    background-color: #20a19d;
+  }
+
+.btn:focus{
+  background-color: #20a19d;
+
+}
+
+.btn:hover{
+    color: #fff;
+    background: #20a19d;
+}
+
+
+
+
+.hoverCard{
+    cursor: pointer;
+    transition: .2s ease ;
+  }
+  .hoverCard:hover{
+    transform: scale(1.05);
+    transform-style: flat;
+    transition: .2s ease ;
+  }
+
+  .hoverCard::before{
+    transform: scale(1.05);
+  
+    transition: .2s ease ;
+  }
