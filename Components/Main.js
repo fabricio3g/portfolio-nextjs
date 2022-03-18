@@ -97,7 +97,7 @@ export default function Main() {
             <Image
              alt="avatar"
               src="https://fabricio3g.github.io/personal-portfolio/Avatar.jpg"
-              style={{ width: "200px" }}
+              style={{ width: "150px" }}
             />
           </Col>
         </Row>
