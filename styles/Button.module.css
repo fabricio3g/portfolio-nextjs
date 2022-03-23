@@ -8,6 +8,7 @@
     padding: 5px 10px 5px 10px;
     font-weight: 500;
     margin-right: 5px;
+    transition: .3s ease-in-out;
 }
 
 .btn1{
@@ -17,7 +18,20 @@
     cursor: pointer;
     border-radius: 0.2rem;
     color: #fff;
-    background: #20a19d;
+    background: #2e39f6;
+    transition: .2s ease-in-out;
+  }
+
+
+
+.btn1:hover{
+  background: #2e38f6da;
+  transition: .1s ease-in-out;
+}
+
+.btn1:focus{
+  background: #030ff7;
+  transition: .3s ease-in-out;
 }
 
 .active{
@@ -26,7 +40,7 @@
     font-size: medium;
     cursor: pointer;
     color: #fff;
-    background: rgb(48, 202, 197);
+    background: #2e39f6;
     border-radius: 0.2rem;
     padding: 5px 10px 5px 10px;
     font-weight: 500;
@@ -34,17 +48,19 @@
 }
 
 .active:hover {
-    background-color: #20a19d;
+    background-color: #2e39f6;
+    transition: .3s ease-in-out;
   }
 
 .btn:focus{
-  background-color: #20a19d;
+  background-color: #2e39f6;
 
 }
 
 .btn:hover{
     color: #fff;
-    background: #20a19d;
+    background: #2e39f6;
+    transition: .3s ease-in-out;
 }
 
 
