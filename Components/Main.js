@@ -51,10 +51,11 @@ export default function Main() {
 
   return (
     <>
-      <Container className="mt-5 pt-5">
-        <Row className="justify-content-md-center" xs={2} md={3} lg={3}>
-          <Col>
-            <h2 className="mb-3">
+      <Container  fluid style={{paddingTop:'7rem', paddingBottom:'7rem'}} className='d-flex  justify-content-center bg-svg' >
+        <Row className="justify-content-md-center mx-auto gap-5" >
+          <Col className=''>
+            
+            <h2 className=" mb-3">
               <span>I&apos;m Fabricio</span>
             </h2>
             <h6 className="">
@@ -103,7 +104,7 @@ export default function Main() {
         </Row>
       </Container>
       <Container
- className="mt-5 p-5"
+ className="p-5"
  
         fluid
         style={{ background: "#262730" }}
@@ -112,7 +113,7 @@ export default function Main() {
         <Container>
           <Row xs={1} md={3} className="gap-4 justify-content-center mx-auto">
             <Col>
-              <Card className="mx-auto shadow rounded-pill">
+              <Card className="mx-auto shadow rounded">
                 <Card.Title className="text-center mt-2 pt-1">
                   Languages
                 </Card.Title>
@@ -142,7 +143,7 @@ export default function Main() {
               </Card>
             </Col>
             <Col>
-              <Card className="mx-auto shadow  rounded-pill ">
+              <Card className="mx-auto shadow  rounded ">
                 <Card.Title className="text-center mt-2 pt-1">
                   Frameworks
                 </Card.Title>
@@ -179,12 +180,21 @@ export default function Main() {
         <Row xs={1} md={3} className="gap-4 justify-content-center mx-auto">
           <Col>
             <Card className={`mx-auto shadow rounded-lg ${Style.hoverCard}`}>
-              <Card.Title className="text-center mt-2 pt-1">
+              <Card.Title className="text-center mt-2 pt-1 ">
                 Verifiable Education
               </Card.Title>
               <Card.Body>
                 <Card.Img src="https://www.upwork.com/att/download/portfolio/persons/uid/1102624734914351104/profile/projects/files/60ec2cd1-a497-47ea-8566-658935a6115e" />
+                <Stack direction={'horizontal'} className='mt-2'>
+          <Button className={Style.btn1}>
+            Github
+          </Button>
+          <Button className={`${Style.btn1} mx-2`} >
+            Live
+          </Button>
+          </Stack>
               </Card.Body>
+              
             </Card>
           </Col>
           <Col>
