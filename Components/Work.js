@@ -10,17 +10,17 @@ const Work = () => {
   {Array.from({ length: 4 }).map((_, idx) => (
     <Col style={{width:'18rem mx-auto'}}>
       <Card className='shadow border-0' >
-        <Card.Img variant="top" src="https://www.upwork.com/att/download/portfolio/persons/uid/1102624734914351104/profile/projects/files/60ec2cd1-a497-47ea-8566-658935a6115e" />
+        <Card.Img variant="top" src="https://images.unsplash.com/photo-1504288145234-919e7bbc6d19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
         <Card.Body>
           <Card.Title>Verifiable Education</Card.Title>
           <Card.Text>
             This is a longer card with supporting text below as a natural
           </Card.Text>
-          <Stack direction={'horizontal'}>
-          <Button className={Style.active}>
-            Repository
+          <Stack direction={'horizontal'} className='mt-2'>
+          <Button className={Style.btn1}>
+            Github
           </Button>
-          <Button className={Style.active}>
+          <Button className={`${Style.btn1} mx-2`} >
             Live
           </Button>
           </Stack>
