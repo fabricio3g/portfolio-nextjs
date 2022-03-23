@@ -12,16 +12,16 @@ const aboutMe = () => {
           <h2 className="text-center aboutme-text pb-2">
             Hello 👋 , I&apos;m Fabricio
           </h2>
-          <p className="text-center aboutme-text pb-5">
-            A student at the National University of Rosario of Medical Science,
+          <p className="text-center aboutme-text pb-1">
+            A Argentinian student at the National University of Rosario of Medical Science,
             and an a technology enthusiast and dog lover
           </p>
-          <h6 className="text-center">
+          <h6 className="text-center pt-3">
             You can find more about my education below
           </h6>
           <a className="mx-auto" href="#table">
-            <Button className={Style.active} style={{ position: "relative" }}>
-              <BiDownArrowAlt />
+            <Button className={Style.active} style={{ position: "relative" , background: '#fff !important'}}>
+              <BiDownArrowAlt color="#000 !important" size={30}/>
             </Button>
           </a>
         </Container>
