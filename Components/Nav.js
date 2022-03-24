@@ -5,19 +5,15 @@ import {
   Button,
 } from "react-bootstrap";
 import Style from "../styles/Button.module.css";
-
+import {BsSun} from 'react-icons/bs'
 const Nav = ({position, path}) => {
   return (
     <>
       <Navbar fixed={`top `} className={`${ position ? 'nav-bg': ''}`}>
         <Container>
           <Navbar.Brand href="/">
-            <Link href={'/'}><span className="dot" id={path === '/aboutme' & !position ? 'dot-white' : ''}>
-              <span className="inner_dot"></span>
-            </span>
-            </Link> 
-          </Navbar.Brand>
-          <Navbar.Toggle />
+           
+            <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Link href={'/'}>
               <Button className={path === '/' ? Style.active : Style.btn } id={path === '/aboutme' & !position ? 'text-white' : ''}>Home</Button>
@@ -33,6 +29,10 @@ const Nav = ({position, path}) => {
             </Link>
             
           </Navbar.Collapse>
+          </Navbar.Brand>
+              <Button className='rounded-pill bg-white border border-black shadow'>
+                  <BsSun color="#3700f9"/>
+              </Button>
         </Container>
       </Navbar>
     </>
