@@ -56,9 +56,9 @@ export default function Main() {
         style={{ paddingTop: "7rem", paddingBottom: "7rem" }}
         className="d-flex  flex-nowrap justify-content-center bg-svg"
       >
-        <Row className="justify-content-md-center mx-auto gap-3">
+        <Row className="justify-content-md-center mx-auto gap-1">
           <Col className="">
-            <h2 className=" mb-3">
+            <h2 className="">
               <span>I&apos;m Fabricio</span>
             </h2>
             <h6>
@@ -118,7 +118,7 @@ export default function Main() {
           <Col>
             <Image
               alt="avatar"
-              className="rounded-circle me-2 shadow m-4"
+              className="rounded-circle me-2 shadow "
               src="https://media-exp1.licdn.com/dms/image/C4E03AQFSTGYCrlFFtA/profile-displayphoto-shrink_800_800/0/1638233773279?e=1653523200&v=beta&t=YGUvtuX7m8r4ev1aErJ9Yc303UrJxJfYc8LfJkYg0Pg"
               style={{ width: "150px", border: "2px solid #d1bb00" }}
             />
