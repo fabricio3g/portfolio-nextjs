@@ -1,83 +1,77 @@
-.btn{
-    border:none;
-    background: none;
-    font-size: medium;
-    cursor:pointer;
-    color: black;
-    border-radius: 0.2rem;
-    padding: 5px 10px 5px 10px;
-    font-weight: 500;
-    margin-right: 5px;
-    transition: .3s ease-in-out;
+.btn {
+  border: none;
+  background: none;
+  font-size: medium;
+  cursor: pointer;
+  color: #000;
+  border-radius: 0.2rem;
+  padding: 5px 10px 5px 10px;
+  font-weight: 500;
+  margin-right: 5px;
+  transition: 0.3s ease-in-out;
 }
 
-.btn1{
-    border:none;
-    background: none;
-    font-size: medium;
-    cursor: pointer;
-    border-radius: 0.2rem;
-    color: #fff;
-    background: #2e39f6;
-    transition: .2s ease-in-out;
-  }
+.btn1 {
+  border: none;
+  background: none;
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  color: #fff;
+  background: #2e39f6;
+  transition: 0.2s ease-in-out;
+}
 
-
-
-.btn1:hover{
+.btn1:hover {
   background: #2e38f6da;
-  transition: .1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
-.btn1:focus{
+.btn1:focus {
   background: #030ff7;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.active{
-    border:none;
-    background: none;
-    font-size: medium;
-    cursor: pointer;
-    color: #fff;
-    background: #2e39f6;
-    border-radius: 0.2rem;
-    padding: 5px 10px 5px 10px;
-    font-weight: 500;
-    margin-right: 5px;
+.active {
+  border: none;
+  background: none;
+  font-size: medium;
+  cursor: pointer;
+  color: #fff;
+  background: #2e39f6;
+  border-radius: 0.2rem;
+  padding: 5px 10px 5px 10px;
+  font-weight: 500;
+  margin-right: 5px;
 }
 
 .active:hover {
-    background-color: #2e39f6;
-    transition: .3s ease-in-out;
-  }
-
-.btn:focus{
   background-color: #2e39f6;
-
+  transition: 0.3s ease-in-out;
 }
 
-.btn:hover{
-    color: #fff;
-    background: #2e39f6;
-    transition: .3s ease-in-out;
+.btn:focus {
+  background-color: #2e39f6;
 }
 
+.btn:hover {
+  color: #fff;
+  background: #2e39f6;
+  transition: 0.3s ease-in-out;
+}
 
+.hoverCard {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.hoverCard:hover {
+  transform: scale(1.05);
+  transform-style: flat;
+  transition: 0.2s ease;
+}
 
+.hoverCard::before {
+  transform: scale(1.05);
 
-.hoverCard{
-    cursor: pointer;
-    transition: .2s ease ;
-  }
-  .hoverCard:hover{
-    transform: scale(1.05);
-    transform-style: flat;
-    transition: .2s ease ;
-  }
-
-  .hoverCard::before{
-    transform: scale(1.05);
-  
-    transition: .2s ease ;
-  }
+  transition: 0.2s ease;
+}
