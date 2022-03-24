@@ -17,10 +17,8 @@ const Layout = ({ children }) => {
     const position = GetScrollPosition()
 
     const navIsDown = () => {
-        if(position > 30){
-            console.log('I"m true')
-            return true
-        }
+        if(position > 30) return true
+        
         return false
     }
     return(
