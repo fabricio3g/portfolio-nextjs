@@ -7,7 +7,7 @@ const Posts = ()=> {
     
     return(
     <Container className=' p-4' fluid style={{ marginTop:'8rem !important'} } >
-    <h3 className='text-center my-4 text-white'>Posts</h3>
+    <h1 className='mx-5 my-5 font-weight-bold pt-5'>Blog.</h1>
     <Row xs={1} md={4} className="gap-4 justify-content-center mx-auto mt-5">
       <Col>
         <Card className="mx-auto shadow ">
