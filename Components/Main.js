@@ -125,6 +125,10 @@ export default function Main() {
           </Col>
         </Row>
       </Container>
+      <Container className='d-flex flex-column justify-content-center'>
+        <p className='text-center'>Github Contributions</p>
+    <img className={'pb-5 px-4'} src="http://ghchart.rshah.org/fabricio3g" alt="fabrcio3g Github chart" />
+    </Container>
       <Container className="p-5" fluid style={{ background: "#262730" }}>
         <h3 className="text-white text-center ">Skills</h3>
         <Container>
@@ -190,10 +194,12 @@ export default function Main() {
               </Card>
             </Col>
           </Row>
+       
         </Container>
+       
       </Container>
-      <Container style={{ marginTop: "5rem" }} className="bg-work">
-        <h3 className="text-center mb-5">Lastest Works</h3>
+      <Container fluid  style={{ background: "#272831", color:'white'}} className=" pb-5">
+        <h3 className="text-center mb-5 mt-5">Lastest Works</h3>
         <Row xs={1} md={3} className="gap-4 justify-content-center mx-auto">
           <Col>
             <Card className={`mx-auto shadow rounded-lg ${Style.hoverCard}`}>
@@ -244,8 +250,7 @@ export default function Main() {
           </Link>
         </Row>
       </Container>
-
-      <Container fluid style={{ background: "#272831" }} className="mt-5 p-5">
+      <Container fluid style={{ background: "#272831" }} className=" pb-5">
         <h3 className="text-center my-4 text-white">Latest posts</h3>
         <Row xs={1} md={4} className="gap-4 justify-content-center mx-auto">
           <Col>
