@@ -118,7 +118,7 @@ export default function Main() {
           <Col>
             <Image
               alt="avatar"
-              className="rounded-circle me-2 shadow "
+              className="rounded-circle shadow "
               src="https://media-exp1.licdn.com/dms/image/C4E03AQFSTGYCrlFFtA/profile-displayphoto-shrink_800_800/0/1638233773279?e=1653523200&v=beta&t=YGUvtuX7m8r4ev1aErJ9Yc303UrJxJfYc8LfJkYg0Pg"
               style={{ width: "150px", border: "2px solid #d1bb00" }}
             />
