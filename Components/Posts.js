@@ -1,13 +1,12 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap"
 import Style from "../styles/Button.module.css";
 
-import Link from "next/link"
 
 const Posts = ()=> {
     
     return(
-    <Container className=' p-4' fluid style={{ marginTop:'8rem !important'} } >
-    <h1 className='mx-5 my-5 font-weight-bold pt-5'>Blog.</h1>
+    <Container className='p-2' fluid style={{ marginTop:'1rem !important'} } >
+    <h1 className='mx-5 font-weight-bold pt-5'>Blog.</h1>
     <Row xs={1} md={4} className="gap-4 justify-content-center mx-auto mt-5">
       <Col>
         <Card className="mx-auto shadow ">
