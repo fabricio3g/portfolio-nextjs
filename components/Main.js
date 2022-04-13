@@ -33,7 +33,8 @@ export default function Main() {
   const {themeName} = useContext(ThemeContext)
 
 
-  console.log(data)
+  let themeChange = (themeName === 'DARK')
+
   return (
     <>
       <Profile/>
@@ -109,12 +110,12 @@ export default function Main() {
        
       </Container>
      
-      <Container fluid  className={`py-5  ${themeName === 'DARK' ? 'bg-gray-0 text-white' : ''}`}>
+      <Container fluid  className={`py-5  ${themeName ? 'bg-gray-0 text-white' : ''}`}>
       <h3 className="text-center text-bold" >LATEST WORKS</h3>
 
        <Work data={data.slice(0, 4)}/>
        <Container className='d-flex justify-content-center mt-1'>
-        <Link className='' href="/portfolio">
+        <Link className='' passHref href="/portfolio">
             <Button className={`${Style.btn1}`} style={{width:'150px'}}>View More</Button>
         </Link>
         </Container>
