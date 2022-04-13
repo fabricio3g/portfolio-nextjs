@@ -8,7 +8,7 @@ const Work = ({data}) => {
     
     <Row xs={1} sm={2} md={4} className="w-48 g-4 justify-content-center">
   {data.map((d, idx) => (
-    <Col style={{width:'18rem'}} key={idx}>
+    <Col style={{width:'18rem'}}  key={idx}>
       <Card className='shadow border' >
         <Card.Img className="border rounded" variant="top" src={d.img} />
         <Card.Body>
