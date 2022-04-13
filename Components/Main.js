@@ -28,9 +28,11 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import { VscLocation } from "react-icons/vsc";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Link from "next/link";
-
+import { ThemeContext } from "../utils/contextTheme";
+import {data} from '../test/work'
+import Work from "./Work";
 export default function Main() {
   const TEXTS = [
     "Web Devolper",
@@ -38,6 +40,7 @@ export default function Main() {
     "Freelancer",
     "Mate Drinker",
   ];
+  const {themeName} = useContext(ThemeContext)
 
   const [index, setIndex] = useState(0);
 
@@ -46,23 +49,24 @@ export default function Main() {
       () => setIndex((index) => index + 1),
       3000 // every 3 seconds
     );
+
     return () => clearTimeout(intervalId);
   }, []);
-
+  console.log(data)
   return (
     <>
       <Container
         fluid
-        style={{ paddingTop: "7rem", paddingBottom: "7rem" }}
-        className="d-flex  flex-nowrap justify-content-center bg-svg"
-      >
-        <Row className="justify-content-md-center mx-auto gap-1">
-          <Col className="">
+        style={{ paddingTop: "7rem", }}
+        className={`d-flex flex-nowrap justify-content-center ${themeName === 'DARK' ? 'bg-svg-black ' : 'bg-svg'}`}
+      > 
+        <Row className="p-2 mb-5 shadow border rounded mx-auto gap-1 bg-white">
+          <Col>
             <h2 className="">
-              <span>I&apos;m Fabricio</span>
+              <span>I&apos;m Fabricio.</span>
             </h2>
             <h6>
-              <b>
+              <b className="" style={{color:'#3aa19d'}}>
                 <TextTransition
                   text={TEXTS[index % TEXTS.length]}
                   springConfig={presets.gentle}
@@ -70,8 +74,8 @@ export default function Main() {
               </b>
             </h6>
             <div>
-              <VscLocation color="#000" size={22} />
-              <b style={{ color: "#000" }}>Argentina</b>
+              <VscLocation  size={22} />
+              <b  >Argentina</b>
             </div>
             <br />
             <Stack direction="horizontal" className="pt-1 mb-3 gap-3">
@@ -81,7 +85,7 @@ export default function Main() {
                 rel="noreferrer"
               >
                 <TooltipButton title={"Github"}>
-                  <AiFillGithub size={20} color={"#212529"} />
+                  <AiFillGithub size={20} color={ '#212529'} />
                 </TooltipButton>
               </a>
               <a
@@ -90,7 +94,7 @@ export default function Main() {
                 rel="noreferrer"
               >
                 <TooltipButton title={"Linkedin"}>
-                  <AiFillLinkedin size={20} color={"#212529"} />
+                  <AiFillLinkedin size={20} color={ '#212529'}/>
                 </TooltipButton>
               </a>
               <a
@@ -99,7 +103,7 @@ export default function Main() {
                 rel="noreferrer"
               >
                 <TooltipButton title={"Twitter"}>
-                  <AiFillTwitterCircle size={20} color={"#212529"} />
+                  <AiFillTwitterCircle size={20} color={ '#212529'} />
                 </TooltipButton>
               </a>
               <a
@@ -108,56 +112,54 @@ export default function Main() {
                 rel="noreferrer"
               >
                 <TooltipButton title={"UpWork"}>
-                  <SiUpwork size={20} color={"#212529"} />
+                  <SiUpwork size={20} color={ '#212529'}/>
                 </TooltipButton>
               </a>
             </Stack>
 
-            <Button className={Style.btn1}>Download CV</Button>
+            <Button className={Style.btn1} >Download CV</Button>
           </Col>
           <Col>
             <Image
               alt="avatar"
               className="rounded-circle shadow "
               src="https://media-exp1.licdn.com/dms/image/C4E03AQFSTGYCrlFFtA/profile-displayphoto-shrink_800_800/0/1638233773279?e=1653523200&v=beta&t=YGUvtuX7m8r4ev1aErJ9Yc303UrJxJfYc8LfJkYg0Pg"
-              style={{ width: "150px", border: "2px solid #d1bb00" }}
+              style={{ width: "150px", border: "5px outset #c7cbae" }}
             />
           </Col>
         </Row>
       </Container>
-      <Container className='d-flex flex-column justify-content-center'>
-        <p className='text-center'>Github Contributions</p>
-    <img className={'pb-5 px-4'} src="http://ghchart.rshah.org/fabricio3g" alt="fabrcio3g Github chart" />
-    </Container>
-      <Container className="p-5" fluid style={{ background: "#262730" }}>
-        <h3 className="text-white text-center ">Skills</h3>
+      <Container fluid className="pt-5"  style={{ background: "#272831" }}>
+    
+        <h3 className="text-center pb-5 text-bold underline wavy text-white" >SKILLS</h3>
         <Container>
-          <Row xs={1} md={3} className="gap-4 justify-content-center mx-auto">
+          <Row xs={1} md={3} className="pb-5 gap-4 justify-content-center mx-auto">
             <Col>
-              <Card className="mx-auto shadow rounded">
+              <Card className="rounded">
                 <Card.Title className="text-center mt-2 pt-1">
-                  Languages
+                  <b>Languages</b>
+                  
                 </Card.Title>
                 <Card.Body>
                   <Stack
                     direction={"horizontal"}
-                    className={"gap-2 justify-content-center"}
+                    className={"gap-2  justify-content-center"}
                   >
-                    <TooltipButton title={"CSS"}>
-                      <SiCsswizardry title="CSS" size={30} color={"#212529"} />{" "}
+                    <TooltipButton   title={"CSS"}>
+                      <SiCsswizardry size={50} color={"#3ea1d6"} />{" "}
                     </TooltipButton>
                     <TooltipButton title={"Typescript"}>
-                      <SiTypescript size={30} color={"#212529"} />{" "}
+                      <SiTypescript size={50} color={"#1c70c8"} />{" "}
                     </TooltipButton>
                     <TooltipButton title={"JavaScript"}>
                       <SiJavascript
                         title="Javascript"
-                        color={"#212529"}
-                        size={30}
+                        color={"#cbbb19"}
+                        size={50}
                       />{" "}
                     </TooltipButton>
                     <TooltipButton title={"Python"}>
-                      <SiPython size={30} color={"#212529"} />
+                      <SiPython size={50} color={"#29669b"} />
                     </TooltipButton>
                   </Stack>
                 </Card.Body>
@@ -175,19 +177,19 @@ export default function Main() {
                   >
                     <TooltipButton title={"Nest"}>
                       {" "}
-                      <SiNestjs size={30} color={"#212529"} />
+                      <SiNestjs size={50} color={"#d5194d"} />
                     </TooltipButton>
                     <TooltipButton title={"Express"}>
-                      <SiExpress size={30} color={"#212529"} />
+                      <SiExpress size={50} color={"#7e7e7e"} />
                     </TooltipButton>
                     <TooltipButton title={"Vue"}>
-                      <SiVuedotjs size={30} color={"#212529"} />{" "}
+                      <SiVuedotjs size={50} color={"#47b47d"} />{" "}
                     </TooltipButton>
                     <TooltipButton title={"React"}>
-                      <SiReact size={30} color={"#212529"} />
+                      <SiReact size={50} color={"#67d2f4"} />
                     </TooltipButton>
                     <TooltipButton title={"Next js"}>
-                      <SiNextdotjs size={30} color={"#212529"} />
+                      <SiNextdotjs size={50} color={"#000000"} />
                     </TooltipButton>
                   </Stack>
                 </Card.Body>
@@ -198,61 +200,21 @@ export default function Main() {
         </Container>
        
       </Container>
-      <Container fluid  style={{ background: "#272831", color:'white'}} className=" pb-5">
-        <h3 className="text-center mb-5 mt-5">Lastest Works</h3>
-        <Row xs={1} md={3} className="gap-4 justify-content-center mx-auto">
-          <Col>
-            <Card className={`mx-auto shadow rounded-lg ${Style.hoverCard}`}>
-              <Card.Title className="text-center mt-2 pt-1 ">
-                Verifiable Education
-              </Card.Title>
-              <Card.Body>
-                <Card.Img src="https://www.upwork.com/att/download/portfolio/persons/uid/1102624734914351104/profile/projects/files/60ec2cd1-a497-47ea-8566-658935a6115e" />
-                <Stack direction={"horizontal"} className="mt-2">
-                  <Button className={Style.btn1}>Github</Button>
-                  <Button className={`${Style.btn1} mx-2`}>Live</Button>
-                </Stack>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className={`mx-auto shadow rounded-lg ${Style.hoverCard}`}>
-              <Card.Title className="text-center mt-2 pt-1">
-                News App
-              </Card.Title>
-              <Card.Body>
-                <Card.Img src="https://www.upwork.com/att/download/portfolio/persons/uid/1102624734914351104/profile/projects/files/36c86818-d321-4ec0-bcee-64a0f7496868" />
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className={`mx-auto shadow rounded-lg ${Style.hoverCard}`}>
-              <Card.Title className="text-center mt-2 pt-1">
-                News App
-              </Card.Title>
-              <Card.Body>
-                <Card.Img src="https://www.upwork.com/att/download/portfolio/persons/uid/1102624734914351104/profile/projects/files/36c86818-d321-4ec0-bcee-64a0f7496868" />
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className={`mx-auto shadow rounded-lg ${Style.hoverCard}`}>
-              <Card.Title className="text-center mt-2 pt-1">
-                News App
-              </Card.Title>
-              <Card.Body>
-                <Card.Img src="https://www.upwork.com/att/download/portfolio/persons/uid/1102624734914351104/profile/projects/files/36c86818-d321-4ec0-bcee-64a0f7496868" />
-              </Card.Body>
-            </Card>
-          </Col>
-          <Link href="/portfolio">
-            <Button className={`${Style.btn1}`}>View More</Button>
-          </Link>
-        </Row>
+     
+      <Container fluid  className={`py-5  ${themeName === 'DARK' ? 'bg-gray-0 text-white' : ''}`}>
+      <h3 className="text-center text-bold" >LASTES WORK</h3>
+
+       <Work/>
+       <Container className='d-flex justify-content-center mt-1'>
+        <Link className='' href="/porfolio">
+            <Button className={`${Style.btn1}`} style={{width:'150px'}}>View More</Button>
+        </Link>
+        </Container>
       </Container>
-      <Container fluid style={{ background: "#272831" }} className=" pb-5">
-        <h3 className="text-center my-4 text-white">Latest posts</h3>
+      <Container fluid style={{ background: "#272831" }} className="d-flex flex-column pb-5">
+        <h3 className="my-4 text-center text-bold underline wavy text-white" >RECENTLY PUBLISHED</h3>
         <Row xs={1} md={4} className="gap-4 justify-content-center mx-auto">
+          
           <Col>
             <Card className="mx-auto shadow ">
               <Card.Body>
@@ -270,41 +232,14 @@ export default function Main() {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
-            <Card className="mx-auto shadow ">
-              <Card.Body>
-                <h5>Build web3 aplication</h5>
-                <p>
-                  react-lazy-load-i and enters a viewport and it’s also
-                  compatible with server-side rendering (SSR).
-                </p>
-                <p className="text-muted my-1">12-03-2022</p>
-                <br />
-                <Button className={`${Style.btn1}`}>Read</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="mx-auto shadow ">
-              <Card.Body>
-                <h5>Build web3 aplication</h5>
-                <p>
-                  react-lazy-load-image-component is used to lazy load React
-                  components and images, it boasts of support for intersection
-                  observer which determines when an element leaves and enters a
-                  viewport and it’s also compatible with server-side rendering
-                  (SSR).
-                </p>
-                <p className="text-muted my-1">12-03-2022</p>
-                <br />
-                <Button className={`${Style.btn1}`}>Read</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Link href="/blog">
-            <Button className={`${Style.btn1}`}>View More</Button>
-          </Link>
+
+          
         </Row>
+        <Container className='d-flex justify-content-center mt-4'>
+        <Link className='' href="/blog">
+            <Button className={`${Style.btn1}`} style={{width:'150px'}}>View More</Button>
+        </Link>
+        </Container>
       </Container>
     </>
   );
