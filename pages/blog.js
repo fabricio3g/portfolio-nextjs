@@ -1,5 +1,5 @@
-import Posts from "../Components/Posts"
-import Layout from '../Components/Layout'
+import Posts from "../components/Posts"
+import Layout from '../components/Layout'
 function Blog(){
     return(
         <div>

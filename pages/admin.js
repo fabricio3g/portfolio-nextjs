@@ -1,5 +1,5 @@
-import AdminLayout from "../Components/AdminLayoud";
-import AdminLogin from "../Components/AdminLogin";
+import AdminLayout from "../components/AdminLayoud";
+import AdminLogin from "../components/AdminLogin";
 
 const Admin = () => {
 

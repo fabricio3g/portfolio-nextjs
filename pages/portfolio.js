@@ -1,5 +1,5 @@
-import Layout from "../Components/Layout"
-import Work from "../Components/Work"
+import Layout from "../components/Layout"
+import Work from "../components/Work"
 
 const portfolio = () =>{
     return(

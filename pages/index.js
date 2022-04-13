@@ -1,6 +1,6 @@
 
-import Layout from "../Components/Layout";
-import Main from "../Components/Main";
+import Layout from "../components/Layout";
+import Main from "../components/Main";
 export default function Home() {
   return (
     <>

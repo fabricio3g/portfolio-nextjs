@@ -1,5 +1,5 @@
-import Layout from "../Components/Layout";
-import PostContent from "../Components/PostContent";
+import Layout from "../components/Layout";
+import PostContent from "../components/PostContent";
 
 const Post = ()=>{
     return(

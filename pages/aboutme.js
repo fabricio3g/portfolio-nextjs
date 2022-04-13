@@ -1,5 +1,5 @@
 import { Table, Container } from "react-bootstrap";
-import Layout from "../Components/Layout";
+import Layout from "../components/Layout";
 import { BiLinkExternal, BiDownArrowAlt } from "react-icons/bi";
 import { Button } from "react-bootstrap";
 import Style from "../styles/Button.module.css";
