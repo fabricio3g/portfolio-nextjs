@@ -3,7 +3,7 @@ import Style from "../styles/Button.module.css";
 const AdminLayout = () => {
   return (
     <Container fluid className={'d-flex flex-raw'}  style={{ height:'100vh' } }>
-        <Container 
+        {/* <Container 
           className="d-flex flex-column flex-shrink-0 p-3 m-0 bg-light"
           style={{ width: "280px", height:'100vh%' } }
         >
@@ -58,7 +58,7 @@ const AdminLayout = () => {
         </Container>
         <Container>
             Hello World
-        </Container>
+        </Container> */}
         </Container>
   );
 };

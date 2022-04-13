@@ -23,7 +23,7 @@ const Footer = () => {
     return(
       <Container fluid className={`pb-5  ${themeName === 'DARK' ? 'bg-gray-0 text-white' : ''} mt-auto pt-5 footer`}>
       <h1 className="text-center">👋</h1>
-      <h2 className="text-center">Let's connect</h2>
+      <h2 className="text-center">Let&apos;s connect</h2>
       <h4 className="text-center text-muted">fabricio.3g@gmail.com</h4>
       <Stack
         direction="horizontal"
@@ -35,10 +35,10 @@ const Footer = () => {
         <SiUpwork title="Upwork" size={20} />
       </Stack>
       <p className="text-center">
-        <small>Coded by 'Fabricio Medrano' - 2022</small>
+        <small>Coded by &apos; Fabricio Medrano &apos; - 2022</small>
       </p>
       <p className="text-center">
-        <p className="text-muted">Domain provided by <a target={'_blank'} href='https://dev.ar/'>dev.ar</a></p>
+        <p className="text-muted">Domain provided by <a target={'_blank'} rel='noreferrer' href='https://dev.ar/'>dev.ar</a></p>
       </p>
 
     </Container>
