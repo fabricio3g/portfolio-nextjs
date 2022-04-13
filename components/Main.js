@@ -119,7 +119,7 @@ export default function Main() {
 
        <Work data={data.slice(0, 4)}/>
        <Container className='d-flex justify-content-center mt-1'>
-        <Link className='' href="/porfolio">
+        <Link className='' href="/portfolio">
             <Button className={`${Style.btn1}`} style={{width:'150px'}}>View More</Button>
         </Link>
         </Container>
@@ -149,7 +149,7 @@ export default function Main() {
           
         </Row>
         <Container className='d-flex justify-content-center mt-4'>
-        <Link className='' href="/blog">
+        <Link className='' passHref href="/blog">
             <Button className={`${Style.btn1}`} style={{width:'150px'}}>View More</Button>
         </Link>
         </Container>
