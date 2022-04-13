@@ -202,7 +202,7 @@ export default function Main() {
       </Container>
      
       <Container fluid  className={`py-5  ${themeName === 'DARK' ? 'bg-gray-0 text-white' : ''}`}>
-      <h3 className="text-center text-bold" >LASTES WORK</h3>
+      <h3 className="text-center text-bold" >LATEST WORK</h3>
 
        <Work/>
        <Container className='d-flex justify-content-center mt-1'>
