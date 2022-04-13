@@ -9,20 +9,33 @@ const Work = ({data}) => {
     <Row xs={1} sm={2} md={4} className="w-48 g-4 justify-content-center">
   {data.map((d, idx) => (
     <Col style={{width:'18rem'}} key={idx}>
-      <Card className='shadow border-0' >
-        <Card.Img variant="top" src="https://socialify.git.ci/fabricio3g/portfolio-nextjs/image?description=1&language=1&name=1&owner=1&theme=Dark" />
+      <Card className='shadow border' >
+        <Card.Img className="border rounded" variant="top" src={d.img} />
         <Card.Body>
           <Card.Title>{d.title}</Card.Title>
-          <Card.Text>
+          <Card.Text className="text-muted">
             {d.description}
           </Card.Text>
           <Stack direction={'horizontal'} className='mt-2'>
-          <Button as="a" href={d.github} target='_blink' className={Style.btn1}>
+          {
+          d.github === ''? (''): 
+          (<Button as="a" href={d.github} target='_blink' className={Style.btn1}>
             Github
-          </Button>
-          <Button as="a" href={d.live} target='_blink' className={`${Style.btn1} mx-2`} >
+          </Button>)
+          }
+          {d.live === '' ? (''): (
+            <Button as="a" href={d.live} target='_blink' className={`${Style.btn1} mx-2`} >
             Live
           </Button>
+          )}
+          {
+            d.live === '' && d.github === '' && (
+              <Button disabled target='_blink' className={`mx-auto bg-black border mx-2`} >
+              Code not available
+              </Button>
+            )
+          }
+          
           </Stack>
  
         </Card.Body>
