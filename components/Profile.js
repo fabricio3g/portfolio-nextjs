@@ -104,7 +104,7 @@ const Profile = () => {
             alt="avatar"
             className="rounded-circle shadow "
             src="https://media-exp1.licdn.com/dms/image/C4E03AQFSTGYCrlFFtA/profile-displayphoto-shrink_800_800/0/1638233773279?e=1653523200&v=beta&t=YGUvtuX7m8r4ev1aErJ9Yc303UrJxJfYc8LfJkYg0Pg"
-            style={{ width: "150px", border: "5px outset #c7cbae" }}
+            style={{ width: "150px", border: "5px inset #76bcb9" }}
           />
         </Col>
       </Row>
