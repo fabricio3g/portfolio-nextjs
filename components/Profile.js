@@ -21,7 +21,7 @@ const Profile = () => {
     "Mate Drinker",
   ];
   const { themeName } = useContext(ThemeContext);
-
+ 
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -32,15 +32,14 @@ const Profile = () => {
 
     return () => clearTimeout(intervalId);
   }, []);
+  let themeChange = (themeName === 'DARK')
   return (
     <Container
       fluid
       style={{ paddingTop: "7rem" }}
-      className={`d-flex flex-nowrap justify-content-center ${
-        themeName === "DARK" ? "bg-svg-black " : "bg-svg"
-      }`}
+      className={`d-flex flex-nowrap justify-content-center bg-svg `}
     >
-      <Row className="p-2 mb-5 shadow border rounded mx-auto gap-1 bg-white">
+      <Row className={`p-2 mb-5 shadow border rounded mx-auto  ${ themeChange ? ' text-white bg-gray-0' : 'bg-white'}`}>
         <Col>
           <h2 className="">
             <span>I&apos;m Fabricio.</span>
@@ -65,7 +64,7 @@ const Profile = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"Github"}>
-                <AiFillGithub size={20} color={"#212529"} />
+                <AiFillGithub size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
             <a
@@ -74,7 +73,7 @@ const Profile = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"Linkedin"}>
-                <AiFillLinkedin size={20} color={"#212529"} />
+                <AiFillLinkedin size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
             <a
@@ -83,7 +82,7 @@ const Profile = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"Twitter"}>
-                <AiFillTwitterCircle size={20} color={"#212529"} />
+                <AiFillTwitterCircle size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
             <a
@@ -92,7 +91,7 @@ const Profile = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"UpWork"}>
-                <SiUpwork size={20} color={"#212529"} />
+                <SiUpwork size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
           </Stack>
@@ -104,7 +103,7 @@ const Profile = () => {
             alt="avatar"
             className="rounded-circle shadow "
             src="https://media-exp1.licdn.com/dms/image/C4E03AQFSTGYCrlFFtA/profile-displayphoto-shrink_800_800/0/1638233773279?e=1653523200&v=beta&t=YGUvtuX7m8r4ev1aErJ9Yc303UrJxJfYc8LfJkYg0Pg"
-            style={{ width: "150px", border: "5px inset #76bcb9" }}
+            style={{ width: "130px", border: "5px solid #42a19d" }}
           />
         </Col>
       </Row>
