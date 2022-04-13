@@ -12,7 +12,7 @@ const Work = ({data}) => {
       <Card className='shadow border' >
         <Card.Img className="border rounded" variant="top" src={d.img} />
         <Card.Body>
-          <Card.Title>{d.title}</Card.Title>
+          <Card.Title className="text-black">{d.title}</Card.Title>
           <Card.Text className="text-muted">
             {d.description}
           </Card.Text>
