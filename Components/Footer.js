@@ -7,7 +7,8 @@ import {
 
 } from "react-bootstrap";
 
-
+import { ThemeContext } from "../utils/contextTheme";
+import { useContext } from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -18,8 +19,9 @@ import {
 } from "react-icons/si";
 
 const Footer = () => { 
+  const {themeName} = useContext(ThemeContext)
     return(
-      <Container fluid className="mt-auto pt-5 footer">
+      <Container fluid className={`pb-5  ${themeName === 'DARK' ? 'bg-gray-0 text-white' : ''} mt-auto pt-5 footer`}>
       <h1 className="text-center">👋</h1>
       <h2 className="text-center">Let's connect</h2>
       <h4 className="text-center text-muted">fabricio.3g@gmail.com</h4>
