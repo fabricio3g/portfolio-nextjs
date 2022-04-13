@@ -21,8 +21,9 @@ import {
 
 const Footer = () => { 
   const {themeName} = useContext(ThemeContext)
+    const themeChange = (themeName === 'DARK' )
     return(
-      <Container fluid className={`pb-5  ${themeName === 'DARK' ? 'bg-gray-0 text-white' : ''} mt-auto pt-5 footer`}>
+      <Container fluid className={`pb-5  ${themeChange ? 'bg-gray-0 text-white' : ''} mt-auto pt-5 footer`}>
       <h1 className="text-center cursor-pointer">👋</h1>
       <h2 className="text-center">Let&apos;s connect</h2>
       <h4 className="text-center text-muted">fabricio.3g@gmail.com</h4>
@@ -36,7 +37,7 @@ const Footer = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"Github"}>
-                <AiFillGithub size={20} color={"#212529"} />
+                <AiFillGithub size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
             <a
@@ -45,7 +46,7 @@ const Footer = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"Linkedin"}>
-                <AiFillLinkedin size={20} color={"#212529"} />
+                <AiFillLinkedin size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
             <a
@@ -54,7 +55,7 @@ const Footer = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"Twitter"}>
-                <AiFillTwitterCircle size={20} color={"#212529"} />
+                <AiFillTwitterCircle size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
             <a
@@ -63,7 +64,7 @@ const Footer = () => {
               rel="noreferrer"
             >
               <TooltipButton title={"UpWork"}>
-                <SiUpwork size={20} color={"#212529"} />
+                <SiUpwork size={20} color={`${ themeChange ? '#fff' : '#212529'}`} />
               </TooltipButton>
             </a>
       </Stack>
