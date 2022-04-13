@@ -9,13 +9,8 @@ import {
 } from "react-bootstrap";
 import TooltipButton from "./TooltipButton";
 import { Profile } from "./Profile";
-import TextTransition, { presets } from "react-text-transition";
 import Style from "../styles/Button.module.css";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-} from "react-icons/ai";
+
 import {
   SiCsswizardry,
   SiJavascript,
