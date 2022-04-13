@@ -70,7 +70,7 @@ const Profile = () => {
             </a>
             <a
               target={"_blank"}
-              href="https://github.com/fabricio3g"
+              href="https://www.linkedin.com/in/medrano-nestor"
               rel="noreferrer"
             >
               <TooltipButton title={"Linkedin"}>
@@ -79,7 +79,7 @@ const Profile = () => {
             </a>
             <a
               target={"_blank"}
-              href="https://github.com/fabricio3g"
+              href="https://twitter.com/bigobolson"
               rel="noreferrer"
             >
               <TooltipButton title={"Twitter"}>
@@ -88,7 +88,7 @@ const Profile = () => {
             </a>
             <a
               target={"_blank"}
-              href="https://github.com/fabricio3g"
+              href="https://www.upwork.com/freelancers/~01f2e7255549ee10cd"
               rel="noreferrer"
             >
               <TooltipButton title={"UpWork"}>
