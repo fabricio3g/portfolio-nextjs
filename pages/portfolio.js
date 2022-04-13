@@ -4,7 +4,7 @@ import {data} from '../test/work'
 import {  useContext } from "react";
 import {ThemeContext} from '../utils/contextTheme'
 import { Container } from "react-bootstrap";
-const portfolio = () =>{
+const Portfolio = () =>{
     const { themeName } = useContext(ThemeContext);
     let themeChange = (themeName === 'DARK')
     return(
@@ -22,4 +22,4 @@ const portfolio = () =>{
     )
 } 
 
-export default portfolio
+export default Portfolio
