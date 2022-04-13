@@ -6,10 +6,10 @@ import Style from "../styles/Button.module.css";
 const aboutMe = () => {
   return (
     <Layout>
-      <Container fluid className=" bg-sky pt-2">
-        <Container className="d-flex flex-column text-white">
-          <h1 className="about-title py-3 text-center text-white">About Me</h1>
-          <h2 className="text-center aboutme-text pb-2">
+      <Container fluid className="bg-sky pt-2">
+        <Container className="d-flex flex-column text-white mt-5" >
+          <h1 className="about-title border-0  text-center mt-5 text-white">About Me</h1>
+          <h2 className="text-center aboutme-text mb-3">
             Hello 👋 , I&apos;m Fabricio
           </h2>
           <p className="text-center aboutme-text pb-1">
