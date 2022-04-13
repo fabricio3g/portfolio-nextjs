@@ -3,13 +3,13 @@ import Nav from './Nav'
 import Footer from './Footer'
 import GetScrollPosition from '../utils/getScrollPosition'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
-
-
+import { useEffect, useState, useContext } from 'react'
+import { ThemeContext } from '../utils/contextTheme'
 const Layout = ({ children }) => {
     const  [ path, setPath ]  = useState('')
     const router = useRouter()
     
+
     useEffect(()=>{
         setPath(String(router.route)) 
     })
