@@ -5,11 +5,28 @@ import {
   Button,
 } from "react-bootstrap";
 import Style from "../styles/Button.module.css";
-import {BsSun} from 'react-icons/bs'
+import {BsMoon, BsSun} from 'react-icons/bs'
+
+import { useState, useContext } from 'react'
+import { ThemeContext } from '../utils/contextTheme'
+
 const Nav = ({position, path}) => {
+
+  const context = useContext(ThemeContext)
+
+  function changeTheme(){
+      console.log('Context: ', context)
+      if(context.themeName === 'DARK'){
+        context.changeTheme('LIGTH')
+      }else{
+        context.changeTheme('DARK')
+      }
+      
+  }
+
   return (
     <>
-      <Navbar fixed={`top `} className={`${ position ? 'nav-bg': ''}`}>
+      <Navbar fixed={`top `} className={`${ position ? 'nav-bg ': ''}`}>
         <Container>
           <Navbar.Brand href="/">
            
@@ -30,8 +47,11 @@ const Nav = ({position, path}) => {
             
           </Navbar.Collapse>
           </Navbar.Brand>
-              <Button className='rounded-pill bg-white border border-black shadow'>
-                  <BsSun color="#3700f9"/>
+              <Button onClick={changeTheme} className='rounded-pill bg-white border border-black shadow'>
+                  
+                  {
+                    context.themeName === 'DARK' ? (<BsSun color="#3700f9"/>): (<BsMoon color="#3700f9" />)
+                  }
               </Button>
         </Container>
       </Navbar>
