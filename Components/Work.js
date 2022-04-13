@@ -6,11 +6,11 @@ const Work = () => {
     <>
     <Container className={'mt-5 p-5'}>
     
-    <Row xs={1} sm={2} md={4} className="g-4 justify-content-center">
+    <Row xs={1} sm={2} md={4} className="w-48 g-4 justify-content-center">
   {Array.from({ length: 4 }).map((_, idx) => (
-    <Col style={{width:'18rem mx-auto'}}>
+    <Col style={{width:'18rem'}} key={idx}>
       <Card className='shadow border-0' >
-        <Card.Img variant="top" src="https://images.unsplash.com/photo-1504288145234-919e7bbc6d19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
+        <Card.Img variant="top" src="https://socialify.git.ci/fabricio3g/portfolio-nextjs/image?description=1&language=1&name=1&owner=1&theme=Dark" />
         <Card.Body>
           <Card.Title>Verifiable Education</Card.Title>
           <Card.Text>
