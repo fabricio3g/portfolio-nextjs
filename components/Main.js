@@ -110,7 +110,7 @@ export default function Main() {
        
       </Container>
      
-      <Container fluid  className={`py-5  ${themeName ? 'bg-gray-0 text-white' : ''}`}>
+      <Container fluid  className={`py-5  ${themeChange? 'bg-gray-0 text-white' : 'bg-white'}`}>
       <h3 className="text-center text-bold" >LATEST WORKS</h3>
 
        <Work data={data.slice(0, 4)}/>

@@ -9,10 +9,7 @@ const Posts = ()=> {
 
     return(
       <>
-    <div className="mt-5">
-
-    </div>
-    <Container  className={`p-3 mt-2 ${themeChange && 'bg-gray-0 text-white'}`} fluid >
+    <Container  className={`p-3 mt-2 ${themeChange && 'bg-gray-0 text-white'}`} >
     <h1 className='mx-5 font-weight-bold pt-5'>Blog.</h1>
     <Row xs={1} md={4} className="gap-4 justify-content-center mx-auto mt-5">
       <Col>

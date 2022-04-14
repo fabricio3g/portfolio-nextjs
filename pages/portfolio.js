@@ -13,7 +13,7 @@ const Portfolio = () =>{
             <div className="mt-5 ">
 
             </div>
-            <Container fluid className={` mt-2 ${themeChange ? 'bg-gray-0 ' : 'bg-white'} `}>
+            <Container fluid className={`mt-2 ${themeChange ? 'bg-gray-0 ' : 'bg-white'} `}>
             
             <Work data={data}/>
             </Container>
