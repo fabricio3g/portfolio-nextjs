@@ -28,29 +28,31 @@ const Nav = ({position, path}) => {
     <>
       <Navbar fixed={`top `} className={`${ position ? 'nav-bg ': ''}`}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand as='div'>
            
             <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Link href={'/'}>
+            <Link passHref href={'/'}>
               <Button className={path === '/' ? Style.active : Style.btn } id={path === '/aboutme' & !position ? 'text-white' : ''}>Home</Button>
             </Link>
-            <Link href={'/portfolio'}>
+            <Link passHref href={'/portfolio'}>
               <Button className={path === '/portfolio' ? Style.active : Style.btn } id={path === '/aboutme' & !position ? 'text-white' : ''}>Portfolio</Button>
             </Link>
-            <Link href={'/blog'}>
+            <Link passHref href={'/blog'}>
               <Button className={path === '/blog' ? Style.active : Style.btn } id={path === '/aboutme' & !position ? 'text-white' : ''} >Blog</Button>
             </Link>
-            <Link href={'/aboutme'}>
+            <Link passHref href={'/aboutme'}>
               <Button className={path === '/aboutme' ? Style.active : Style.btn }>About</Button>
             </Link>
             
           </Navbar.Collapse>
           </Navbar.Brand>
-              <Button onClick={changeTheme} className='rounded-pill bg-white border border-black shadow'>
+              <Button onClick={changeTheme} className={`bg-white border border-black shadow`}>
                   
                   {
-                    context.themeName === 'DARK' ? (<BsSun color="#3700f9"/>): (<BsMoon color="#3700f9" />)
+                    context.themeName === 'DARK' ? (
+                    <i className="my-auto"><BsSun color="#3700f9"/></i>
+                    ): (<BsMoon color="#3700f9" />)
                   }
               </Button>
         </Container>
