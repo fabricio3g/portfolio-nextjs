@@ -23,7 +23,7 @@ const Footer = () => {
   const {themeName} = useContext(ThemeContext)
     const themeChange = (themeName === 'DARK' )
     return(
-      <Container fluid className={`pb-5  ${themeChange ? 'bg-gray-0 text-white' : ''} mt-auto pt-5 footer`}>
+      <Container fluid className={`  ${themeChange ? 'bg-gray-0 text-white' : ''} mt-auto pt-5 footer`}>
       <h1 className="text-center cursor-pointer">👋</h1>
       <h2 className="text-center">Let&apos;s connect</h2>
       <h4 className="text-center text-muted">fabricio.3g@gmail.com</h4>
