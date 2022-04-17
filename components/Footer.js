@@ -24,7 +24,9 @@ const Footer = () => {
     const themeChange = (themeName === 'DARK' )
     return(
       <Container fluid className={`  ${themeChange ? 'bg-gray-0 text-white' : ''} mt-auto pt-5 footer`}>
-      <h1 className="text-center cursor-pointer">👋</h1>
+      <h1 className="text-center">
+        <img className=" cursor-pointer mb-2" width={60} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Emoji_u1f44b.svg/128px-Emoji_u1f44b.svg.png?20170527185010"/>
+      </h1>
       <h2 className="text-center">Let&apos;s connect</h2>
       <h4 className="text-center text-muted">fabricio.3g@gmail.com</h4>
       <Stack
