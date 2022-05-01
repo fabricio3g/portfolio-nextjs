@@ -12,7 +12,7 @@ module.exports = {
         {
             "title": "Crypto Dashboard",
             "description": "Crypto dashboard with Vue + Typescript, made for a client at Upwork",
-            "img": "https://imgur.com/a/gfZP3A5",
+            "img": "https://i.imgur.com/OizpfKb.png",
             "github": "",
             "live": ""
           },
