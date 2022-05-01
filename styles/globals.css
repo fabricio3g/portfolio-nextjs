@@ -39,29 +39,7 @@ body {
 }
 
 
-.dot {
-  display: flex;
-  padding: 5px;
-  border-radius: 100%;
-  border: 3px solid #000;
-}
 
-
-#dot-white{
-  display: flex;
-  border: #ffffff solid 3px;
-  padding: 5px;
-  border-radius: 100%;
-
-}
-
-.inner_dot{
-  height: 25px;
-  width: 25px;
-  border-radius: 100%;
-  background: var(--primary-color);
-  display: inline-block;
-}
 
 
 .nav-bg{
@@ -133,5 +111,9 @@ body {
 }
 .form_input:hover{
   border: 2px solid var(--primary-color);
+}
+
+.bg-gray-200{
+  background-color: #a8adb4;
 }
 
