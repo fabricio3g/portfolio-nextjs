@@ -59,7 +59,7 @@ const Profile = () => {
           </div>
           <br />
           <Stack direction="horizontal" className="pt-1 mb-3 gap-3">
-            <a
+            <a 
               target={"_blank"}
               href="https://github.com/fabricio3g"
               rel="noreferrer"
@@ -97,16 +97,17 @@ const Profile = () => {
             </a>
           </Stack>
 
-          <Button className={Style.btn1}>Download CV</Button>
+          <Button className={`${Style.btn1}`}>Download CV</Button>
         </Col>
         <Col>
           <Image
             alt="avatar"
-            className="rounded-circle shadow "
+            className="shape shadow "
             src="https://media-exp1.licdn.com/dms/image/C4E03AQFSTGYCrlFFtA/profile-displayphoto-shrink_800_800/0/1638233773279?e=1653523200&v=beta&t=YGUvtuX7m8r4ev1aErJ9Yc303UrJxJfYc8LfJkYg0Pg"
-            style={{ width: "130px", border: "5px solid #42a19d" }}
+            style={{ width: "130px"}}
           />
         </Col>
+        
       </Row>
     </Container>
   );
