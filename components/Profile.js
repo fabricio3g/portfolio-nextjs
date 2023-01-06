@@ -19,7 +19,6 @@ const Profile = () => {
     "Full Stack Dev",
     "Freelancer",
     "Mate Drinker",
-    "Blockchain Dev"
   ];
   const { themeName } = useContext(ThemeContext);
  
