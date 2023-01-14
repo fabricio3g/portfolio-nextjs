@@ -1,7 +1,7 @@
 
 
 @import url('https://fonts.cdnfonts.com/css/cera-round-pro');
-*{
+body{
   font-family: 'Cera Round Pro', sans-serif;
   font-weight: 700;
 }
