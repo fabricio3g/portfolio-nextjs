@@ -102,7 +102,7 @@ const Profile = () => {
           <Image
             alt="avatar"
             className="shape shadow "
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQFSTGYCrlFFtA/profile-displayphoto-shrink_800_800/0/1638233773279?e=1653523200&v=beta&t=YGUvtuX7m8r4ev1aErJ9Yc303UrJxJfYc8LfJkYg0Pg"
+            src="https://avatars.githubusercontent.com/u/48396639?v=4"
             style={{ width: "130px"}}
           />
         </Col>
