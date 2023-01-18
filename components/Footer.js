@@ -71,12 +71,8 @@ const Footer = () => {
             </a>
       </Stack>
       <p className="text-center">
-        <small>Coded by &apos; Fabricio Medrano &apos; - 2022</small>
+        <small>Coded by &apos; Fabricio Medrano &apos; - 2023</small>
       </p>
-      <p className="text-center">
-        <p className="text-muted">Domain provided by <a target={'_blank'} rel='noreferrer' href='https://dev.ar/'>dev.ar</a></p>
-      </p>
-
     </Container>
     
  )
