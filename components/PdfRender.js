@@ -21,7 +21,6 @@ const PdfRender = ({ url }) => {
   useEffect(() => {
     fetch(
         url
-      
     )
       .then((res) => res.arrayBuffer())
       .then((data) => {
